@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="app/scss/bootstrap.css">
+  <link rel="stylesheet" href="app/scss/style.css">
+  
+  <title>Frontend Mentor | Room homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__nav" id="header__nav">
+      <div id="mobile_nav" class="mobile_nav">
+        <a href="/">home</a><a href="/">shop</a><a href="/">about</a><a href="/">contact</a>
+      </div>
+      <nav class="container flex flex-ai-c">
+        <img src="images/icon-hamburger.svg" id="mobile_menu" class="mobile_menu hide-for-desktop">
+        <div class="desktop_nav flex flex-ai-c">
+          <img src="images/logo.svg">
+          <div class="nav-links">
+            <a href="/">home</a><a href="/">shop</a><a href="/">about</a><a href="/">contact</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <article class="container hero">
+      <img id="arrow-left" class="arrow-left" src="images/icon-angle-left.svg">
+      <img id="arrow-right" class="arrow-right" src="images/icon-angle-right.svg">
+      <div class="info-text" id="info-text">
+        <h1 id="title"></h1>
+        <p id="description"></p>
+      </div>
+      
+      <a href="/"><span>SHOP NOW</span><img src="images/icon-arrow.svg"></a>
+    </article>
+  </header>
+  <section class="about">
+    <article>
+      <img src="images/image-about-dark.jpg">
+    </article>
+    <article>
+      <div class="container about-info">
+        <h2> ABOUT OUR FURNITURE</h2>
+        <p>
+          Our multifunctional collection blends design and function to suit your individual taste.
+          Make each room unique, or pick a cohesive theme that best express your interests and what
+          inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+          or anything in between. Product specialists are available to help you create your dream space.
+        </p>
+      </div>
+    </article>
+    <article>
+      <img src="images/image-about-light.jpg">
+    </article>
+  </section>
+<!--
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">BRAHIM Trahim</a>.
+  </div>
+-->
+  <script src="app/js/javascript.js"></script>
+</body>
+</html>

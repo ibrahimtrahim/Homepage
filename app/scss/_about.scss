@@ -1,0 +1,42 @@
+.about {
+    @include breackpoint-up(large){
+        display: flex;
+    }
+    height: 35vh;
+    article {
+        div {
+            height: 100%;
+        }
+        img {
+            height: 100%;
+            @include breackpoint-down(medium){
+                width: 100%;
+            }
+        }
+
+        .about-info{
+            padding-top: 40px;
+            padding-bottom: 40px;
+            @include breackpoint-up(large){
+                padding: 60px 60px;
+            }
+            h2 {
+                font-size: 16px;
+                letter-spacing: 5px;
+                font-weight: 600;
+                margin-bottom: 20px;
+                @include breackpoint-up(large){
+                    font-size: 20px;
+                    letter-spacing: 5px;
+                }
+            }
+            p {
+                font-size: 16px;
+                font-weight: 600;
+                color: $DarkGray;
+                line-height: 1.3;
+               
+            }
+        }
+    }
+}
